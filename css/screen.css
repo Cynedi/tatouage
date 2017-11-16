@@ -1,0 +1,84 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 7, ../sass/screen.scss */
+body {
+  background-image: url("../img/backgrounggrand.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Amatic SC', cursive;
+}
+/* line 13, ../sass/screen.scss */
+body header {
+  background-color: rgba(110, 198, 198, 0.77);
+}
+/* line 15, ../sass/screen.scss */
+body header .menu {
+  position: fixed;
+  top: 0;
+}
+/* line 20, ../sass/screen.scss */
+body header h1 {
+  margin: 0 !important;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 10px #f26183, 0 0 20px #f26183, 0 0 30px #f26183, 0 0 40px #72d1de, 0 0 70px #72d1de, 0 0 80px #72d1de, 0 0 100px #72d1de, 0 0 150px #72d1de;
+}
+/* line 29, ../sass/screen.scss */
+body header .button-collapse .material-icons {
+  color: white;
+}
+/* line 36, ../sass/screen.scss */
+body main section {
+  width: 300px;
+  margin: auto;
+}
+/* line 40, ../sass/screen.scss */
+body main section .carousel {
+  background-color: rgba(255, 255, 255, 0.31);
+  height: 200px;
+  border: 5px solid rgba(110, 198, 198, 0.77);
+  margin-top: 30px;
+  position: relative;
+}
+/* line 47, ../sass/screen.scss */
+body main section .carousel button {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+}
+/* line 58, ../sass/screen.scss */
+body footer section {
+  width: 200px;
+  margin: auto;
+}
+/* line 62, ../sass/screen.scss */
+body footer section .inline {
+  text-align: center;
+  font-size: 20px;
+}
+/* line 65, ../sass/screen.scss */
+body footer section .inline .fa {
+  color: #535353;
+  margin: 10px;
+}
+
+@media (min-width: 768px) {
+  /* line 76, ../sass/screen.scss */
+  body header .menu {
+    font-size: 70px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 86, ../sass/screen.scss */
+  body header {
+    height: 300px;
+  }
+  /* line 89, ../sass/screen.scss */
+  body header h1 {
+    font-size: 80px;
+    padding: 60px;
+  }
+}

@@ -1,0 +1,103 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+$stylecolor: rgba(110, 198, 198, 0.77);
+
+body {
+    background-image: url("../img/backgrounggrand.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Amatic SC', cursive;
+
+    header {
+        background-color: $stylecolor;
+        .menu{
+          position: fixed;
+          top:0;
+        }
+
+        h1 {
+            margin: 0 !important;
+            text-align: center;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 0 0 10px rgb(242, 97, 131), 0 0 20px rgb(242, 97, 131), 0 0 30px rgb(242, 97, 131), 0 0 40px rgb(114, 209, 222), 0 0 70px rgb(114, 209, 222), 0 0 80px rgb(114, 209, 222), 0 0 100px rgb(114, 209, 222), 0 0 150px rgb(114, 209, 222);
+        }
+
+        .button-collapse {
+            .material-icons {
+                color: white;
+            }
+        }
+    }
+
+    main {
+        section {
+            width: 300px;
+            margin: auto;
+
+            .carousel {
+                background-color: rgba(255, 255, 255, 0.31);
+                height: 200px;
+                border: 5px solid $stylecolor;
+                margin-top: 30px;
+                position: relative;
+
+                button {
+                    position: absolute;
+                    bottom: 0;
+                    left: 40%;
+                
+                }
+            }
+        }
+    }
+
+    footer {
+        section {
+            width: 200px;
+            margin: auto;
+
+            .inline {
+                text-align: center;
+                font-size: 20px;
+                .fa {
+                  color: rgb(83, 83, 83);
+                  margin: 10px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px) {
+    body {
+        header {
+            .menu {
+                font-size: 70px;
+            }
+        }
+    }
+
+
+}
+@media (min-width: 992px) {
+    body {
+        header {
+            height: 300px;
+
+            h1 {
+                font-size: 80px;
+                padding: 60px;
+            }
+        }
+    }
+
+    main {
+        section {
+            .carousel {
+
+            }
+        }
+    }
+}
