@@ -12,9 +12,10 @@ body {
 
     header {
         background-color: $stylecolor;
-        .menu{
-          position: fixed;
-          top:0;
+
+        .menu {
+            position: fixed;
+            top: 0;
         }
 
         h1 {
@@ -48,23 +49,46 @@ body {
                     position: absolute;
                     bottom: 0;
                     left: 40%;
-                
+                }
+            }
+        }
+
+        footer {
+            section {
+                width: 200px;
+                margin: auto;
+
+                .inline {
+                    text-align: center;
+                    font-size: 20px;
+
+                    .fa {
+                        color: rgb(83, 83, 83);
+                        margin: 10px;
+                    }
                 }
             }
         }
     }
 
-    footer {
-        section {
-            width: 200px;
-            margin: auto;
+    #catalogue {
+      h2{
+        text-align: center;
+        margin-top: 120px;
+      }
+      h2{
+        text-decoration: underline;
+        font-weight: bold;
+      }
+        article {
 
-            .inline {
-                text-align: center;
-                font-size: 20px;
-                .fa {
-                  color: rgb(83, 83, 83);
-                  margin: 10px;
+            .catalogue {
+              display: flex;
+              overflow: scroll;
+
+               img {
+                 min-width: 200px;
+
                 }
             }
         }
@@ -78,8 +102,6 @@ body {
             }
         }
     }
-
-
 }
 @media (min-width: 992px) {
     body {
@@ -89,14 +111,6 @@ body {
             h1 {
                 font-size: 80px;
                 padding: 60px;
-            }
-        }
-    }
-
-    main {
-        section {
-            .carousel {
-
             }
         }
     }
