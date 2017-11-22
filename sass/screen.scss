@@ -20,7 +20,7 @@ body {
         }
 
         h1 {
-          padding-top: 50px;
+            padding-top: 50px;
             margin: 0 !important;
             text-align: center;
             font-weight: bold;
@@ -31,7 +31,6 @@ body {
         .button-collapse {
             .material-icons {
                 color: white;
-
             }
         }
     }
@@ -41,15 +40,13 @@ body {
             width: 300px;
             margin: auto;
 
-
             .carousel {
                 background-color: rgba(255, 255, 255, 0.31);
                 height: 200px;
                 border: 5px solid $stylecolor;
-                margin-top: 180px;
+                margin-top: 80px;
 
                 position: relative;
-
 
                 button {
                     position: absolute;
@@ -61,15 +58,14 @@ body {
     }
 
     #catalogue {
-        h2 {
-            text-align: center;
-            margin-top: 130px;
-        }
 
         h2 {
+            text-align: center;
+            margin-top: 250px;
             text-decoration: underline;
             font-weight: bold;
         }
+
 
         article {
             .catalogue {
@@ -120,20 +116,22 @@ body {
             }
         }
     }
-    #contact{
-      #formulaire {
-        background-color: white;
-        height: 100vh;
-      }
-      #map {
-        background-color: $stylecolor;
-        height: 100vh;
-        iframe {
-          height: 100%;
-          width: 100%;
 
+    #contact {
+        #formulaire {
+            background-color: white;
+            height: 100vh;
         }
-      }
+
+        #map {
+            background-color: $stylecolor;
+            height: 100vh;
+
+            iframe {
+                height: 100%;
+                width: 100%;
+            }
+        }
     }
 
     footer {
@@ -166,33 +164,40 @@ body {
                 display: flex;
                 width: 590px;
                 margin: auto;
+                .carousel {
+                  margin-top: 180px;
+                }
             }
+        }
+        #catalogue {
+          margin-top: 450px;
+          
         }
 
         #blog {
-
-            p{
-              font-size: 25px;
+            p {
+                font-size: 25px;
             }
+
             #containerstyles {
                 #images {
                     width: 450px;
                     margin: auto;
 
                     figure {
-                      margin:0 !important;
+                        margin: 0 !important;
                     }
-                  }
                 }
-
-        }
-        #contact {
-          #map{
-            iframe{
-              margin-top: 0;
-              height: 100%;
             }
-          }
+        }
+
+        #contact {
+            #map {
+                iframe {
+                    margin-top: 0;
+                    height: 100%;
+                }
+            }
         }
     }
 }
@@ -206,5 +211,18 @@ body {
                 padding: 60px;
             }
         }
+        #catalogue {
+          h2 {
+            margin-top: 200px;
+          }
+        }
+        #home{
+        #gallery {
+          .carousel {
+            margin-top: 80px;
+
+          }
+        }
+      }
     }
 }
